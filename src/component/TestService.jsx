@@ -46,7 +46,7 @@ const TestService = () => {
     <div className="col-sm-12 col-md-12 col-lg-4" key={item.id}>
         <div className="myCard p-3 mb-3" style={{boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px', height: '220px', borderRadius: '15px'}}>
            <div className="myCard-img">
-               <img src={item.image} alt="" className='w-25'/>
+               <img src={item.image} alt="" className={item.image === Faid ? 'w-50' : 'w-25'}/>
            </div>
            <div className="myCard-body">
                <h5 className='my-3'><b>{item.heading}</b></h5>
