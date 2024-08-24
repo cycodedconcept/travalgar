@@ -1,14 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Divide from './Divide'
 import TestService from './TestService'
 import './style.css'
 
 const Service = () => {
-  const [hide, setHide] = useState(false);
 
-  const displayService = () => {
-    setHide(true)
-  }
+  
   return (
     <React.Fragment>
       <div className="row">
@@ -29,13 +26,7 @@ const Service = () => {
                   </p>
               </div>
               <div className="row">
-                {hide ? (<TestService/>) : (<form>
-                  <input type="text" name="" id="" />
-                  <input type="text" name="" id="" />
-                  <button>login</button>
-                </form>)}
-
-                  <button onClick={displayService}>show services</button>
+                <TestService/>
               </div>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-1"></div>
